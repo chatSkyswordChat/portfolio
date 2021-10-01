@@ -1,17 +1,18 @@
 <template>
   <div>
-    <!-- <navbar /> -->
-    <h1>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius, optio
-      iusto quas doloremque harum earum repudiandae suscipit facere, voluptates
-      atque quasi nostrum consequatur accusamus, porro deserunt? Amet, neque?
-      Hic, ab.
-    </h1>
+    <present />
+    <favorite />
+    <workHistory />
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  async mounted() {
+    const AOS = await import("aos");
+    AOS.init();
+  },
+};
 </script>
 
 <style lang="scss" scoped>

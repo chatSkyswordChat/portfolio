@@ -1,3 +1,6 @@
+@import "./import/color", "./import/font_size", "./import/responsive",
+  "./import/mixin";
+
 @font-face {
   font-family: "Prompt-Regular";
   src: url("~assets/fonts/Prompt-Regular.eot?#iefix")
@@ -10,9 +13,91 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 62.5% !important;
+}
+body,
+.v-application {
+  font-family: "Prompt-Regular" !important;
+  font-size: $font_text;
+  font-weight: normal;
+  font-style: normal;
+  transition: all 0.5s ease-in-out;
+  overflow: hidden; // ใช้กับ aos จะเกิด scrollbar
+  color: $color_text;
+}
+img {
+  max-width: 100%;
+  width: 100%;
+}
+a,
+button {
+  border: none;
+  transition: all 0.5s ease-in-out;
+  text-decoration: none;
+  display: inline-block;
+  user-select: none;
 }
 
-h1 {
-  font-size: 3rem;
+h1,
+h2,
+h3,
+h6 {
+  font-weight: normal;
 }
+h1 {
+  font-size: $font_head;
+}
+h2 {
+  font-size: $font_subHead;
+}
+h3 {
+  font-size: $font_superText;
+}
+h6,
+p {
+  font-size: $font_text;
+}
+small {
+  font-size: $font_small;
+}
+
+figure {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0 !important;
+  list-style: none;
+}
+
+picture {
+  display: flex;
+}
+
+.v-application p {
+  margin-bottom: 0 !important;
+}
+
+// ปุ่ม vuetify
+.v-btn::before {
+  background-color: inherit !important;
+}
+// end ปุ่ม vuetify
+
+.calc {
+  margin: 0 calc(-50vw + 50%);
+  max-width: 100vw;
+  width: 100vw;
+}
+
+// เส้น
+.line {
+  border: 0;
+  border-bottom: 0.1rem solid $color_line !important;
+}
+.dashed {
+  border: 0;
+  border-bottom: 0.1rem dashed $color_line !important;
+}
+//  end เส้น

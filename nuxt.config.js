@@ -2,6 +2,7 @@ import colors from "vuetify/es5/util/colors";
 
 export default {
   target: "server",
+  // target: "static",
   router: {
     base: "/portfolio/"
   },
@@ -19,10 +20,13 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ["@/assets/scss/main.scss"],
+  css: ["@/assets/css/main.css", "aos/dist/aos.css"],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: [
+    "@/plugins/fontAwesome.js",
+    { src: "@/plugins/aos.js", mode: "client" }
+  ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -30,8 +34,18 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/vuetify
-    "@nuxtjs/vuetify"
+    "@nuxtjs/vuetify",
+    "@nuxtjs/style-resources"
   ],
+
+  styleResources: {
+    scss: [
+      "@/assets/scss/import/_color.scss",
+      "@/assets/scss/import/_font_size.scss",
+      "@/assets/scss/import/_responsive.scss",
+      "@/assets/scss/import/_mixin.scss"
+    ]
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
@@ -39,7 +53,17 @@ export default {
     "@nuxtjs/axios",
     // https://go.nuxtjs.dev/pwa
     "@nuxtjs/pwa"
+    // "@nuxtjs/style-resources"
   ],
+
+  // styleResources: {
+  //   scss: [
+  //     "assets/scss/import/_color.scss",
+  //     "assets/scss/import/_font_size.scss",
+  //     "assets/scss/import/_responsive.scss",
+  //     "assets/scss/import/_mixin.scss"
+  //   ]
+  // },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},

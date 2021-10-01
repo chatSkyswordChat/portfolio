@@ -1,0 +1,202 @@
+.bg_primary {
+  background: #d40101 !important;
+}
+
+.bg_secondary {
+  background: #ffffff !important;
+}
+
+.bg_info {
+  background: #42a5f5 !important;
+}
+
+.bg_warning {
+  background: #fb8c00 !important;
+}
+
+.bg_error {
+  background: #d40101 !important;
+}
+
+.bg_success {
+  background: #8bc34a !important;
+}
+
+.bg_disabled {
+  background: #ebebeb !important;
+}
+
+.bg_text {
+  background: #333333 !important;
+}
+
+.bg_background {
+  background: #bfbfbf !important;
+}
+
+.bg_link {
+  background: #3f51b5 !important;
+}
+
+.color_primary {
+  color: #d40101 !important;
+}
+
+.color_secondary {
+  color: #ffffff !important;
+}
+
+.color_info {
+  color: #42a5f5 !important;
+}
+
+.color_warning {
+  color: #fb8c00 !important;
+}
+
+.color_error {
+  color: #d40101 !important;
+}
+
+.color_success {
+  color: #8bc34a !important;
+}
+
+.color_disabled {
+  color: #ebebeb !important;
+}
+
+.color_text {
+  color: #333333 !important;
+}
+
+.color_background {
+  color: #bfbfbf !important;
+}
+
+.color_link {
+  color: #3f51b5 !important;
+}
+
+.font_head {
+  font-size: clamp(2rem, 2.5vw, 2.4rem);
+}
+
+.font_subHead {
+  font-size: clamp(1.8rem, 2.5vw, 2rem);
+}
+
+.font_superText {
+  font-size: clamp(1.4rem, 2.5vw, 1.6rem);
+}
+
+.font_text {
+  font-size: clamp(1.2rem, 2.5vw, 1.4rem);
+}
+
+.font_small {
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+}
+
+@font-face {
+  font-family: "Prompt-Regular";
+  src: url("~assets/fonts/Prompt-Regular.eot?#iefix") format("embedded-opentype"), url("~assets/fonts/Prompt-Regular.woff") format("woff"), url("~assets/fonts/Prompt-Regular.ttf") format("truetype"), url("~assets/fonts/Prompt-Regular.svg#Prompt-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+html {
+  font-size: 62.5% !important;
+}
+
+body,
+.v-application {
+  font-family: "Prompt-Regular" !important;
+  font-size: clamp(1.2rem, 2.5vw, 1.4rem);
+  font-weight: normal;
+  font-style: normal;
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+  color: #333333;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+}
+
+a,
+button {
+  border: none;
+  transition: all 0.5s ease-in-out;
+  text-decoration: none;
+  display: inline-block;
+  user-select: none;
+}
+
+h1,
+h2,
+h3,
+h6 {
+  font-weight: normal;
+}
+
+h1 {
+  font-size: clamp(2rem, 2.5vw, 2.4rem);
+}
+
+h2 {
+  font-size: clamp(1.8rem, 2.5vw, 2rem);
+}
+
+h3 {
+  font-size: clamp(1.4rem, 2.5vw, 1.6rem);
+}
+
+h6,
+p {
+  font-size: clamp(1.2rem, 2.5vw, 1.4rem);
+}
+
+small {
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+}
+
+figure {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0 !important;
+  list-style: none;
+}
+
+picture {
+  display: flex;
+}
+
+.v-application p {
+  margin-bottom: 0 !important;
+}
+
+.v-btn::before {
+  background-color: inherit !important;
+}
+
+.calc {
+  margin: 0 calc(-50vw + 50%);
+  max-width: 100vw;
+  width: 100vw;
+}
+
+.line {
+  border: 0;
+  border-bottom: 0.1rem solid #555555 !important;
+}
+
+.dashed {
+  border: 0;
+  border-bottom: 0.1rem dashed #555555 !important;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-app-bar tile fixed color="white" class="headerMenu">
+    <v-app-bar tile fixed color="white" class="navbar">
       <v-app-bar-nav-icon
         class="hidden-md-and-up"
         @click="drawer = true"
@@ -22,7 +22,7 @@
         text
         exact-active-class="active"
         :to="menu.route"
-        class="btnMenu hidden-sm-and-down"
+        class="btn_menu hidden-sm-and-down"
       >
         {{ menu.name }}
       </v-btn>
@@ -36,12 +36,14 @@
             :key="index.id"
             :to="menu.route"
             exact-active-class="active"
-            class="btnMenu"
           >
-            <v-list-item-icon class="font14 mr-2">
-              <font-awesome-icon :icon="menu.icon" />
+            <v-list-item-icon class="icon mr-2">
+              <font-awesome-icon
+                class="font_superText"
+                :icon="[menu.sign, menu.icon]"
+              />
             </v-list-item-icon>
-            <v-list-item-title class="mobileMenu">{{
+            <v-list-item-title class="mobile_menu">{{
               menu.name
             }}</v-list-item-title>
           </v-list-item>
@@ -56,25 +58,34 @@ export default {
   data() {
     return {
       menus: [
-        { name: "HOME", route: { name: "index" }, icon: "home" },
+        {
+          name: "HOME",
+          route: { name: "index" },
+          sign: "fas",
+          icon: "home",
+        },
         {
           name: "Curriculum Vitae",
           route: { name: "curriculumVitae" },
+          sign: "fas",
           icon: "portrait",
         },
         {
           name: "PORTFOLIO",
           route: { name: "portfolio" },
+          sign: "fas",
           icon: "file",
         },
         {
           name: "WORK HISTORY",
           route: { name: "workHistory" },
+          sign: "fas",
           icon: "graduation-cap",
         },
         {
           name: "CONTACT",
           route: { name: "contact" },
+          sign: "fas",
           icon: "mobile-alt",
         },
       ],
@@ -84,46 +95,46 @@ export default {
 };
 </script>
 
-<style>
-.btnMenu::before {
-  opacity: 0 !important;
+<style lang="scss" scoped>
+.navbar {
+  .logo a {
+    @include flex_center();
+    img {
+      max-width: 10rem;
+    }
+  }
+  .btn_menu {
+    font-size: $font_text !important;
+    transition: 0.5s ease-in-out;
+    margin-right: 1.5rem;
+    &.active,
+    &:hover {
+      background: $color_primary;
+      color: $color_secondary;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
-</style>
 
-<style scoped>
-.logo {
-  padding-left: 0 !important;
+// ปุ่มเมนู mobile vuetify
+.v-list-item--link {
+  .icon {
+    @include flex_center_center();
+  }
+  &::before {
+    background-color: inherit !important;
+  }
+  .mobile_menu {
+    font-size: $font_text;
+    line-height: inherit;
+  }
+  &.active,
+  &:hover {
+    background: $color_primary;
+    color: $color_secondary !important;
+  }
 }
-.logo a {
-  display: flex;
-  align-items: center;
-}
-.logo img {
-  max-width: 100px;
-}
-.btnMenu {
-  margin-right: 10px;
-  color: var(--colorBlack);
-  position: relative;
-}
-.btnMenu:last-child {
-  margin-right: 0;
-}
-.btnMenu:hover,
-.btnMenu:focus {
-  background: var(--colorRed);
-  color: var(--colorWhite) !important;
-  transition: 0.5s ease-in-out;
-}
-.btnMenu::before {
-  opacity: 0;
-}
-.btnMenu.active {
-  background: var(--colorRed);
-  color: var(--colorWhite) !important;
-  opacity: 1;
-}
-.mobileMenu {
-  font-size: var(--font10) !important;
-}
+// end ปุ่มเมนู mobile vuetify
 </style>
