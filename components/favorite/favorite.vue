@@ -10,7 +10,7 @@
         <figure><img src="@/assets/images/home/three-02.svg" alt="" /></figure>
         <div>
           <h2 class="font-weight-bold">Web Designer</h2>
-          <p>I specialize in website design.</p>
+          <p>I specialize in website design. to support all screens</p>
         </div>
       </li>
       <li

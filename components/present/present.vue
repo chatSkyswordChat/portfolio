@@ -91,6 +91,10 @@ export default {
     transform: translate(0, -50%);
     max-width: 57.6rem;
     width: 100%;
+    @include responsive_md() {
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
     .my_name {
       background: rgba(255, 255, 255, 0.7);
       h1 {

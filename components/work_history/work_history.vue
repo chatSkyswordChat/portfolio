@@ -11,27 +11,30 @@
     <div class="work_history py-4">
       <h2 class="font_head color_secondary mb-4">Work History</h2>
       <v-timeline>
-        <v-timeline-item v-for="(item, index) in items" :key="index.id">
+        <v-timeline-item
+          v-for="(workHistory, index) in workHistorys"
+          :key="index.id"
+        >
           <template v-slot:opposite>
             <span class="color_secondary font_subHead date">{{
-              item.date
+              workHistory.date
             }}</span>
           </template>
           <v-card
             class="elevation-5"
-            :data-aos="item.fade"
-            :data-aos-duration="item.number"
+            :data-aos="workHistory.fade"
+            :data-aos-duration="workHistory.number"
           >
             <v-card-title
               class="bg_primary font_superText color_secondary py-2 mb-2"
             >
-              {{ item.company }}
+              {{ workHistory.company }}
             </v-card-title>
             <h6 class="font_superText font-weight-bold px-4 mb-2">
-              {{ item.position }}
+              {{ workHistory.position }}
             </h6>
             <v-card-text class="font_text pt-0 detail">
-              {{ item.detail }}
+              {{ workHistory.detail }}
             </v-card-text>
           </v-card>
         </v-timeline-item>
@@ -41,49 +44,18 @@
 </template>
 
 <script>
+import data from "@/data/data.json";
 export default {
   data() {
     return {
-      items: [
-        {
-          date: "June 2017 to Present",
-          company: `บริษัท จัดหางาน จ๊อบบีเคเค ดอท คอม จำกัด`,
-          position: "Web Designer",
-          detail: `Design website, write Html Css code and make screen to be 
-          Responsive, design banner for customers to use the service`,
-          fade: "fade-left",
-          number: "1000",
-        },
-        {
-          date: "February 2016 to May 2017",
-          company: `บริษัท อีซี่วัน ไทย`,
-          position: "Web Designer",
-          detail: `Website Design Write Html Css Code and Make Responsive Screens, Banner and Logo Design`,
-          fade: "fade-right",
-          number: "1200",
-        },
-        {
-          date: "September 2015 to February 2016",
-          company: `Knight Frank Thailand | Real Estate Agents`,
-          position: "Graphic Designer",
-          detail: `Design banners, brochures, vinyl banners. Check the work already. To enter the printing process`,
-          fade: "fade-left",
-          number: "1400",
-        },
-        {
-          date: "September 2012 to September 2015",
-          company: `บริษัท วินเนอร์ ออนไลน์ จำกัด`,
-          position: "Web Designer",
-          detail: `Banner design, media design Design package design, logo, website design and write html css and display the screen responsive`,
-          fade: "fade-right",
-          number: "1600",
-        },
-      ],
+      workHistorys: [],
     };
   },
   async mounted() {
     const AOS = await import("aos");
     AOS.init();
+
+    this.workHistorys = await data.workHistorys;
   },
 };
 </script>

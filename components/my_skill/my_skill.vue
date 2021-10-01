@@ -73,47 +73,6 @@ import data from "@/data/data.json";
 export default {
   data() {
     return {
-      //   items: [
-      //     { name: "Adobe Illustrator", skill: 90 },
-      //     { name: "Adobe Photoshop", skill: 90 },
-      //     { name: "Adobe Xd", skill: 90 },
-      //     { name: "Figma", skill: 70 },
-      //     { name: "Adobe Lightroom", skill: 90 },
-      //     { name: "HTML + CSS + SCSS + SASS + Responsive", skill: 90 },
-      //     { name: "Java Script", skill: 20 },
-      //     { name: "Vue & Nuxt", skill: 20 },
-      //   ],
-      //   skills: [
-      //     {
-      //       name: "Photographer",
-      //       src: require("@/assets/images/home/skill-01.svg"),
-      //       detail: `I have the ability to take pictures and decorate pictures as a hobby.
-      //       I like traveling to take beautiful photos.`,
-      //       fade: "fade-down",
-      //       number: 1000,
-      //     },
-      //     {
-      //       name: "HTML CSS Responsive",
-      //       src: require("@/assets/images/home/skill-02.svg"),
-      //       detail: `I can write html css and make it support all screens, but javascript I still have to practice a lot.`,
-      //       fade: "fade-left",
-      //       number: 1500,
-      //     },
-      //     {
-      //       name: "Graphic Design",
-      //       src: require("@/assets/images/home/skill-03.svg"),
-      //       detail: `I use it to design banners, logos, and various publications with Adobe, Illustrator, and Photoshop.`,
-      //       fade: "fade-up",
-      //       number: 2000,
-      //     },
-      //     {
-      //       name: "Web Design",
-      //       src: require("@/assets/images/home/skill-04.svg"),
-      //       detail: `I designed the website with Adobe xd and Figma to present at the meeting before coding`,
-      //       fade: "fade-right",
-      //       number: 2500,
-      //     },
-      //   ],
       items: [],
       skills: [],
     };

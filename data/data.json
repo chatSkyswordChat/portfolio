@@ -28,7 +28,7 @@
           {
             "name": "Graphic Design",
             "src": "skill-03.svg",
-            "detail": "I use it to design banners, logos, and various publications with Adobe, Illustrator, and Photoshop.",
+            "detail": "I use it to design banners, logos, and various publications with Adobe Illustrator, and Adobe Photoshop.",
             "fade": "fade-up",
             "number": 2000
           },
@@ -39,6 +39,41 @@
             "fade": "fade-right",
             "number": 2500
           }
+    ],
+
+    "workHistorys": [
+      {
+        "date": "June 2017 to Present",
+        "company": "บริษัท จัดหางาน จ๊อบบีเคเค ดอท คอม จำกัด",
+        "position": "Web Designer",
+        "detail": "Design website, write Html Css code and make screen to be Responsive, design banner for customers to use the service",
+        "fade": "fade-left",
+        "number": 1000
+      },
+      {
+        "date": "February 2016 to May 2017",
+        "company": "บริษัท อีซี่วัน ไทย",
+        "position": "Web Designer",
+        "detail": "Website Design Write Html Css Code and Make Responsive Screens, Banner and Logo Design",
+        "fade": "fade-right",
+        "number": 1200
+      },
+      {
+        "date": "September 2015 to February 2016",
+        "company": "Knight Frank Thailand | Real Estate Agents",
+        "position": "Graphic Designer",
+        "detail": "Design banners, brochures, vinyl banners. Check the work already. To enter the printing process",
+        "fade": "fade-left",
+        "number": 1400
+      },
+      {
+        "date": "September 2012 to September 2015",
+        "company": "บริษัท วินเนอร์ ออนไลน์ จำกัด",
+        "position": "Web Designer",
+        "detail": "Banner design, media design Design package design, logo, website design and write html css and display the screen responsive",
+        "fade": "fade-right",
+        "number": 1600
+      }
     ]
 }
      
