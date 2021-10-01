@@ -1,8 +1,8 @@
 import colors from "vuetify/es5/util/colors";
 
 export default {
-  target: "server",
-  // target: "static",
+  // target: "server",
+  target: "static",
   router: {
     base: "/portfolio/"
   },
