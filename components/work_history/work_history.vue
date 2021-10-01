@@ -116,8 +116,8 @@ export default {
 }
 </style>
 
-<style lang="scss">
-@include responsive_sm() {
+<style lang="css">
+@media (max-width: 768px) {
   .v-application--is-ltr
     .v-timeline:not(.v-timeline--dense):not(.v-timeline--reverse):before {
     left: 0;
