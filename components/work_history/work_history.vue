@@ -1,5 +1,5 @@
 <template>
-  <section id="work_history">
+  <section id="work_history" style="overflow-x: hidden">
     <figure class="bg_my">
       <picture>
         <source srcset="@/assets/images/home/bg3.webp" type="image/webp" />

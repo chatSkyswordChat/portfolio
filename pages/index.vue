@@ -9,6 +9,11 @@
       excepturi quas ipsam obcaecati culpa eligendi vel. Iste, ullam?
       Consequatur.
     </h1>
+    <h2>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae, sit vero
+      qui, debitis molestiae recusandae quo eum culpa dicta aliquid, corrupti
+      aperiam ratione ea nesciunt odio alias laboriosam explicabo est?
+    </h2>
   </div>
 </template>
 
