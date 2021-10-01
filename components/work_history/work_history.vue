@@ -116,31 +116,31 @@ export default {
 }
 </style>
 
-<style lang="css">
-@media (max-width: 768px) {
+<style lang="scss">
+@include responsive_sm() {
   .v-application--is-ltr
     .v-timeline:not(.v-timeline--dense):not(.v-timeline--reverse):before {
-    left: 0;
-    background: inherit;
+    left: 0 !important;
+    background: inherit !important;
   }
   .v-timeline:not(.v-timeline--dense):not(.v-timeline--reverse)
     .v-timeline-item:nth-child(odd):not(.v-timeline-item--before),
   .v-timeline:not(.v-timeline--dense):not(.v-timeline--reverse)
     .v-timeline-item--after {
-    flex-direction: column-reverse;
+    flex-direction: column-reverse !important;
   }
   .v-timeline:not(.v-timeline--dense):not(.v-timeline--reverse)
     .v-timeline-item:nth-child(even):not(.v-timeline-item--after),
   .v-timeline:not(.v-timeline--dense):not(.v-timeline--reverse)
     .v-timeline-item--before {
-    flex-direction: column-reverse;
+    flex-direction: column-reverse !important;
   }
   .v-timeline-item__divider {
-    display: none;
+    display: none !important;
   }
   .v-timeline-item__opposite {
-    max-width: 100%;
-    margin-bottom: 1.6rem;
+    max-width: 100% !important;
+    margin-bottom: 1.6rem !important;
   }
   .v-application--is-ltr
     .v-timeline:not(.v-timeline--dense):not(.v-timeline--reverse)
@@ -150,8 +150,8 @@ export default {
     .v-timeline:not(.v-timeline--dense):not(.v-timeline--reverse)
     .v-timeline-item--after
     .v-timeline-item__opposite {
-    text-align: left;
-    width: 100%;
+    text-align: left !important;
+    width: 100% !important;
   }
   .v-application--is-ltr
     .v-timeline:not(.v-timeline--dense):not(.v-timeline--reverse)
@@ -161,8 +161,8 @@ export default {
     .v-timeline:not(.v-timeline--dense):not(.v-timeline--reverse)
     .v-timeline-item--before
     .v-timeline-item__opposite {
-    text-align: left;
-    width: 100%;
+    text-align: left !important;
+    width: 100% !important;
   }
   .v-timeline:not(.v-timeline--dense):not(.v-timeline--reverse)
     .v-timeline-item:nth-child(odd):not(.v-timeline-item--before)
@@ -170,7 +170,7 @@ export default {
   .v-timeline:not(.v-timeline--dense):not(.v-timeline--reverse)
     .v-timeline-item--after
     .v-timeline-item__body {
-    max-width: 100%;
+    max-width: 100% !important;
   }
   .v-timeline:not(.v-timeline--dense):not(.v-timeline--reverse)
     .v-timeline-item:nth-child(even):not(.v-timeline-item--after)
@@ -178,12 +178,12 @@ export default {
   .v-timeline:not(.v-timeline--dense):not(.v-timeline--reverse)
     .v-timeline-item--before
     .v-timeline-item__body {
-    max-width: 100%;
+    max-width: 100% !important;
   }
   .v-timeline-item__body > .v-card:not(.v-card--flat):before,
   .v-timeline-item__body > .v-card:not(.v-card--flat):after {
-    border-top: 0;
-    border-bottom: 0;
+    border-top: 0 !important;
+    border-bottom: 0 !important;
   }
 }
 </style>
