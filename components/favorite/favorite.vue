@@ -1,6 +1,6 @@
 <template>
   <!-- สกิลหลัก -->
-  <section class="pa-4" id="favorite">
+  <section class="py-4" id="favorite">
     <ul>
       <li
         class="elevation-5 rounded-lg pa-4"

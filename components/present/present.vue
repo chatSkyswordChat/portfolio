@@ -1,15 +1,15 @@
 <template>
   <!-- แนะนำตัว -->
-  <section class="calc" id="present">
+  <section id="present">
     <figure class="bg_my">
       <picture>
         <source srcset="@/assets/images/home/bg1.webp" type="image/webp" />
         <source srcset="@/assets/images/home/bg1.jpg" type="image/jpg" />
-        <img src="@/assets/images/home/bg1.jpg" alt="" />
+        <img class="calc" src="@/assets/images/home/bg1.jpg" alt="" />
       </picture>
     </figure>
 
-    <div class="bg_myName px-4">
+    <div class="bg_myName">
       <div
         class="my_name pa-4 rounded-lg elevation-5 text-center"
         data-aos="fade-up"
@@ -77,21 +77,20 @@ export default {
 #present {
   padding-top: 5.2rem;
   position: relative;
+  @include responsive_md() {
+    padding-top: 4.4rem;
+  }
   .bg_my img {
     height: 100vh;
     object-fit: cover;
-    position: relative;
   }
   .bg_myName {
     position: absolute;
     top: 50%;
-    left: 65%;
-    transform: translate(-50%, -50%);
+    right: 0;
+    transform: translate(0, -50%);
     max-width: 57.6rem;
     width: 100%;
-    @include responsive_sm() {
-      left: 50%;
-    }
     .my_name {
       background: rgba(255, 255, 255, 0.7);
       h1 {

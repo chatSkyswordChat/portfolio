@@ -79,7 +79,7 @@
 }
 
 .font_head {
-  font-size: clamp(2rem, 2.5vw, 2.4rem);
+  font-size: clamp(2.4rem, 2.5vw, 2.8rem);
 }
 
 .font_subHead {
@@ -141,7 +141,7 @@ h6 {
 }
 
 h1 {
-  font-size: clamp(2rem, 2.5vw, 2.4rem);
+  font-size: clamp(2.4rem, 2.5vw, 2.8rem);
 }
 
 h2 {
