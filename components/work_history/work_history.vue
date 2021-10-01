@@ -93,8 +93,8 @@ export default {
     @include responsive_md() {
       height: 150vh;
     }
-    @include responsive_xs() {
-      height: 170vh;
+    @include responsive_xxxs() {
+      height: 160vh;
     }
   }
   .work_history {
@@ -108,6 +108,78 @@ export default {
     .detail {
       line-height: 1.5;
     }
+  }
+}
+</style>
+
+<style lang="scss">
+@include responsive_sm() {
+  .v-application--is-ltr
+    .v-timeline:not(.v-timeline--dense):not(.v-timeline--reverse):before {
+    left: 0;
+    background: inherit;
+  }
+  .v-timeline:not(.v-timeline--dense):not(.v-timeline--reverse)
+    .v-timeline-item:nth-child(odd):not(.v-timeline-item--before),
+  .v-timeline:not(.v-timeline--dense):not(.v-timeline--reverse)
+    .v-timeline-item--after {
+    flex-direction: column-reverse;
+  }
+  .v-timeline:not(.v-timeline--dense):not(.v-timeline--reverse)
+    .v-timeline-item:nth-child(even):not(.v-timeline-item--after),
+  .v-timeline:not(.v-timeline--dense):not(.v-timeline--reverse)
+    .v-timeline-item--before {
+    flex-direction: column-reverse;
+  }
+  .v-timeline-item__divider {
+    display: none;
+  }
+  .v-timeline-item__opposite {
+    max-width: 100%;
+    margin-bottom: 1.6rem;
+  }
+  .v-application--is-ltr
+    .v-timeline:not(.v-timeline--dense):not(.v-timeline--reverse)
+    .v-timeline-item:nth-child(odd):not(.v-timeline-item--before)
+    .v-timeline-item__opposite,
+  .v-application--is-ltr
+    .v-timeline:not(.v-timeline--dense):not(.v-timeline--reverse)
+    .v-timeline-item--after
+    .v-timeline-item__opposite {
+    text-align: left;
+    width: 100%;
+  }
+  .v-application--is-ltr
+    .v-timeline:not(.v-timeline--dense):not(.v-timeline--reverse)
+    .v-timeline-item:nth-child(even):not(.v-timeline-item--after)
+    .v-timeline-item__opposite,
+  .v-application--is-ltr
+    .v-timeline:not(.v-timeline--dense):not(.v-timeline--reverse)
+    .v-timeline-item--before
+    .v-timeline-item__opposite {
+    text-align: left;
+    width: 100%;
+  }
+  .v-timeline:not(.v-timeline--dense):not(.v-timeline--reverse)
+    .v-timeline-item:nth-child(odd):not(.v-timeline-item--before)
+    .v-timeline-item__body,
+  .v-timeline:not(.v-timeline--dense):not(.v-timeline--reverse)
+    .v-timeline-item--after
+    .v-timeline-item__body {
+    max-width: 100%;
+  }
+  .v-timeline:not(.v-timeline--dense):not(.v-timeline--reverse)
+    .v-timeline-item:nth-child(even):not(.v-timeline-item--after)
+    .v-timeline-item__body,
+  .v-timeline:not(.v-timeline--dense):not(.v-timeline--reverse)
+    .v-timeline-item--before
+    .v-timeline-item__body {
+    max-width: 100%;
+  }
+  .v-timeline-item__body > .v-card:not(.v-card--flat):before,
+  .v-timeline-item__body > .v-card:not(.v-card--flat):after {
+    border-top: 0;
+    border-bottom: 0;
   }
 }
 </style>
