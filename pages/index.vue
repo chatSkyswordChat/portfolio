@@ -7,7 +7,12 @@
 </template>
 
 <script>
-export default {};
+export default {
+  async mounted() {
+    const AOS = await import("aos");
+    AOS.init();
+  },
+};
 </script>
 
 <style lang="scss" scoped>
