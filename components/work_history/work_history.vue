@@ -92,10 +92,10 @@ export default {
 #work_history {
   position: relative;
   .bg_my img {
-    height: 120vh;
+    height: 125vh;
     object-fit: cover;
     @include responsive_md() {
-      height: 150vh;
+      height: 140vh;
     }
     @include responsive_xxxs() {
       height: 160vh;
