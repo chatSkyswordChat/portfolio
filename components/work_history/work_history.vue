@@ -90,6 +90,12 @@ export default {
   .bg_my img {
     height: 120vh;
     object-fit: cover;
+    @include responsive_md() {
+      height: 150vh;
+    }
+    @include responsive_xs() {
+      height: 170vh;
+    }
   }
   .work_history {
     position: absolute;
