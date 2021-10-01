@@ -42,6 +42,10 @@
 
 <script>
 export default {
+  async mounted() {
+    const AOS = await import("aos");
+    AOS.init();
+  },
   data() {
     return {
       items: [
