@@ -4,6 +4,7 @@
     <favorite />
     <workHistory />
     <mySkill />
+    <portfolio />
   </div>
 </template>
 

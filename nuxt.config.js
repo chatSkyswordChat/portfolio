@@ -56,15 +56,6 @@ export default {
     // "@nuxtjs/style-resources"
   ],
 
-  // styleResources: {
-  //   scss: [
-  //     "assets/scss/import/_color.scss",
-  //     "assets/scss/import/_font_size.scss",
-  //     "assets/scss/import/_responsive.scss",
-  //     "assets/scss/import/_mixin.scss"
-  //   ]
-  // },
-
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
 
