@@ -1,8 +1,8 @@
 <template>
   <div style="padding-top: 120px">
     <!-- <pre>{{ data }}</pre> -->
-    <h1>{{ mountain.title }}</h1>
-    <img :src="mountain.image" alt="" />
+    <h1>{{ title }}</h1>
+    <img :src="image" alt="" />
     <h6>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque commodi
       vitae, nostrum quia fugit obcaecati quibusdam nisi vero voluptate qui
@@ -18,19 +18,13 @@
 </template>
 
 <script>
-// import axios from "axios";
+import axios from "axios";
 export default {
-  // async asyncData({ params }) {
-  //   const { data } = await axios.get(
-  //     `https://api.nuxtjs.dev/mountains/${params.portfolio}`
-  //   );
-  //   return data;
-  // },
-  async asyncData({ params, $axios }) {
-    const mountain = await $axios.$get(
+  async asyncData({ params }) {
+    const { data } = await axios.get(
       `https://api.nuxtjs.dev/mountains/${params.portfolio}`
     );
-    return mountain;
+    return data;
   },
 };
 </script>

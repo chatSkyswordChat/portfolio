@@ -16,21 +16,11 @@
   </div>
 </template>
 <script>
-// import axios from "axios";
+import axios from "axios";
 export default {
-  // async asyncData() {
-  //   const { data } = await axios.get("https://api.nuxtjs.dev/mountains");
-  //   return { mountains: data };
-  // },
-  data() {
-    return {
-      mountains: [],
-    };
-  },
-  async fetch() {
-    this.mountains = await fetch("https://api.nuxtjs.dev/mountains").then(
-      (res) => res.json()
-    );
+  async asyncData() {
+    const { data } = await axios.get("https://api.nuxtjs.dev/mountains");
+    return { mountains: data };
   },
 };
 </script>

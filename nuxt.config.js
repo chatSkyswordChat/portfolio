@@ -2,7 +2,7 @@ import colors from "vuetify/es5/util/colors";
 
 export default {
   // target: "server",
-  target: "static",
+  target: "server",
   router: {
     base: "/portfolio/"
   },
