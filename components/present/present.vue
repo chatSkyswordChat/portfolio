@@ -75,7 +75,6 @@ export default {
 
 <style lang="scss" scoped>
 #present {
-  padding-top: 5.2rem;
   position: relative;
   @include responsive_md() {
     padding-top: 4.4rem;
