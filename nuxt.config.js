@@ -7,7 +7,8 @@ export default {
     base: "/portfolio/"
   },
   generate: {
-    fallback: true // if you want to use '404.html' instead of the default '200.html'
+    fallback: true
+    // if you want to use '404.html' instead of the default '200.html' เวลาอัพขึ้น git ตอน dynamic pages จะไม่ error 404
   },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
