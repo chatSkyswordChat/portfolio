@@ -41,7 +41,7 @@
                       alt=""
                     />
                   </figure>
-                  <h6 class="font_text">{{ skill.name }}</h6>
+                  <h6 class="font_text text-center">{{ skill.name }}</h6>
                 </div>
                 <v-expand-transition>
                   <div
@@ -96,6 +96,7 @@ export default {
     grid-gap: 3rem;
     .bg_ability {
       position: relative;
+      height: 100%;
       .ability {
         @include flex_center_center();
         flex-direction: column;

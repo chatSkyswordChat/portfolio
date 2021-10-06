@@ -77,12 +77,12 @@
     ],
 
     "printDesigns": [
-      {       
+      {     
         "id": 1,
         "head": "Media Kit",
         "size": "width 29 cm. x height 23 cm.",
         "create": "November 2011",
-        "imgaes": [
+        "images": [
           { "name": "detail1.jpg" },
           { "name": "detail2.jpg" }
         ],
@@ -95,7 +95,7 @@
         "head": "Light Box",
         "size": "width 152 cm. x height 91.5 cm.",
         "create": "May 2011",
-        "imgaes": [
+        "images": [
           { "name": "detail3.jpg" },
           { "name": "detail4.jpg" }
         ],
@@ -108,7 +108,7 @@
         "head": "Advertisement The Metropolis",
         "size": "width 33.6 cm. x height 25.4 cm.",
         "create": "October 2015",
-        "imgaes": [
+        "images": [
           { "name": "detail5.jpg" }
         ],
         "detail" : "Luxury condo in Bangna area To promote the condo, it has been posted in many media such as newspapers, expressway signs, vinyl signs, brochures.",
@@ -120,7 +120,7 @@
         "head": "Advertisement NARA 9",
         "size": "width 29.7 cm. x height 14 cm.",
         "create": "November 2015",
-        "imgaes": [
+        "images": [
           { "name": "detail6.jpg" },
           { "name": "detail7.jpg" }
         ],
@@ -133,7 +133,7 @@
         "head": "Advertisement Villa Nakarin",
         "size": "width 33.6 cm. x height 25.4 cm.",
         "create": "October 2015",
-        "imgaes": [
+        "images": [
           { "name": "detail8.jpg" }
         ],
         "detail" : "Large luxury house Onnut-Ring Road With a simple, spacious design, natural colors are used to look comfortable. Because it is truly a symbol of the backyard style",
@@ -148,7 +148,7 @@
         "head": "Banner Knight Frank Thailand | Real Estate Agents",
         "size": "width 1920 px. x height 600 px.",
         "create": "May 2019",
-        "imgaes": [
+        "images": [
           { "name": "detail9.jpg" }
         ],
         "detail" : "Knight Frank Thailand Banner. It is designed to reflect the search for personnel in various positions. To join us In which the color is red That is a symbol of Knight Frank.",
@@ -160,7 +160,68 @@
         "head": "Banner Mitsubishi",
         "size": "width 1920 px. x height 600 px.",
         "create": "February 2019",
-        "imgaes": [
+        "images": [
+          { "name": "detail10.jpg" }
+        ],
+        "detail" : "The design will focus on comfort. Natural energy The power that loves the world, there is no pollution, so use colors that look comfortable and clean.",
+        "name": "port7.jpg",
+        "to": "Banner-Mitsubishi"
+      },
+      {
+        "id": 8,
+        "head": "Banner CBRE",
+        "size": "width 960 px. x height 3500 px.",
+        "create": "July 2019",
+        "images": [
+          { "name": "detail11.jpg" }
+        ],
+        "detail" : "The design will focus on green. Which is a symbol of cbre and uses images related to job applications By focusing on various manners to look interesting",
+        "name": "port8.jpg",
+        "to": "Banner-CBRE"
+      },
+      {
+        "id": 28,
+        "head": "Banner KTC",
+        "size": "width 1920 px. x height 600 px.",
+        "create": "May 2021",
+        "images": [{ "name": "detail19.jpg" }],
+        "detail":
+          "with a simple design and unique in red Make it look luxurious and powerful. I want it to be comfortable on the eyes. Therefore, use white color to make it look attractive and smooth.",
+        "name": "port28.jpg",
+        "to": "Banner-KTC"
+      },
+      {
+        "id": 9,
+        "head": "Banner London Property Exhibition",
+        "size": "width 1000 px. x height 500 px.",
+        "create": "January 2016",
+        "images": [
+          { "name": "detail12.jpg" }
+        ],
+        "detail" : "knight frank is also a broker to help sell real estate to clients. Which each house and condo Is also luxurious and beautiful as well Therefore designed to be colorful, comfortable to the eyes Suitable for rest And see the beautiful scenery",
+        "name": "port9.jpg",
+        "to": "Banner-London-Property-Exhibition"
+      }
+    ],
+    "logoDesigns": [
+      {
+        "id": 6,
+        "head": "Banner Knight Frank Thailand | Real Estate Agents",
+        "size": "width 1920 px. x height 600 px.",
+        "create": "May 2019",
+        "images": [
+          { "name": "detail9.jpg" }
+        ],
+        "detail" : "Knight Frank Thailand Banner. It is designed to reflect the search for personnel in various positions. To join us In which the color is red That is a symbol of Knight Frank.",
+        "name": "port6.jpg",
+        "to": "Banner-Knight-Frank-Thailand-Real-Estate-Agents"
+      },
+      {
+        "id": 7,
+        "head": "Banner Mitsubishi",
+        "size": "width 1920 px. x height 600 px.",
+        "create": "February 2019",
+        "images": [
           { "name": "detail10.jpg" }
         ],
         "detail" : "The design will focus on comfort. Natural energy The power that loves the world, there is no pollution, so use colors that look comfortable and clean.",

@@ -199,4 +199,8 @@ picture {
   border-bottom: 0.1rem dashed #555555 !important;
 }
 
+.line_frame {
+  border: 0.1rem solid #555555;
+}
+
 /*# sourceMappingURL=main.css.map */
