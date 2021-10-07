@@ -76,9 +76,6 @@ export default {
 <style lang="scss" scoped>
 #present {
   position: relative;
-  @include responsive_md() {
-    padding-top: 4.4rem;
-  }
   .bg_my img {
     height: 100vh;
     object-fit: cover;
