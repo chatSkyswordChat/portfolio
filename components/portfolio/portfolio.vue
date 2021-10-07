@@ -40,8 +40,8 @@
         </section>
       </v-tab-item>
 
-      <v-tab-item v-for="tab in 1" :key="tab.id">
-        <section class="portfolio">
+      <v-tab-item v-for="tab in 1" :key="tab.id" class="mt-4">
+        <section class="portfolio mb-4">
           <div
             v-for="bannerDesign in bannerDesigns"
             :key="bannerDesign.id"
@@ -64,13 +64,10 @@
                 />
               </figure>
               <div class="detail bg_disabled pa-4">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Perferendis recusandae possimus dolorem maiores alias
-                  expedita? Ipsum provident fuga quisquam perferendis laudantium
-                  commodi voluptas iste quibusdam! Sint neque nemo tempore
-                  maiores?
-                </p>
+                <p class="mb-4 color_text">{{ bannerDesign.detail }}</p>
+                <v-btn class="font_small bg_primary color_secondary read"
+                  >read more</v-btn
+                >
               </div>
             </nuxt-link>
           </div>
@@ -115,14 +112,17 @@ export default {
       overflow: hidden;
     }
     a {
+      display: flex;
+      flex-direction: column;
       width: 100%;
     }
     figure {
       display: flex;
     }
     .detail {
-      @include flex_start_end();
+      @include flex_end_between();
       flex-direction: column;
+      height: 100%;
       p {
         overflow: hidden;
         display: -webkit-box;

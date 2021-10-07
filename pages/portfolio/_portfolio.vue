@@ -1,7 +1,18 @@
 <template>
-  <div id="page" class="my-5">
-    <h1>{{ portfolio.head }}</h1>
-    <div class="grid_img">
+  <div id="page" class="mt-8">
+    <div class="title mb-4">
+      <h1 class="font-weight-bold">{{ portfolio.head }}</h1>
+      <div class="size_create">
+        <h6>
+          <span class="font-weight-bold">size :</span> {{ portfolio.size }}
+        </h6>
+        <h6>
+          <span class="font-weight-bold">create :</span> {{ portfolio.create }}
+        </h6>
+      </div>
+    </div>
+    <!-- รูป เท่ากับ 1 -->
+    <div class="flex_img" v-if="portfolio.images.length === 1">
       <figure v-for="image in portfolio.images" :key="image.id">
         <img
           :src="require(`@/assets/images/portfolioDetail/${image.name}`)"
@@ -10,6 +21,19 @@
         />
       </figure>
     </div>
+    <!-- end รูป เท่ากับ 1 -->
+
+    <!-- รูป มากกว่า 1 -->
+    <div class="grid_img" v-else>
+      <figure v-for="image in portfolio.images" :key="image.id">
+        <img
+          :src="require(`@/assets/images/portfolioDetail/${image.name}`)"
+          :alt="portfolio.head"
+          class="line_frame"
+        />
+      </figure>
+    </div>
+    <!-- end รูป มากกว่า 1 -->
     <h6>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque commodi
       vitae, nostrum quia fugit obcaecati quibusdam nisi vero voluptate qui
@@ -85,6 +109,54 @@ export default {
           to: "Advertisement-Villa-Nakarin",
         },
         {
+          id: 30,
+          head: "Baoshi",
+          size: "width 21 cm. x height 14.8 cm.",
+          create: "October 2015",
+          images: [
+            {
+              name: "detail20.jpg",
+            },
+            {
+              name: "detail21.jpg",
+            },
+          ],
+          detail:
+            "Winner Online's baoshi game guide by the game is a bright fantasy, cute design, so the color scheme looks bright. that can be played by all ages",
+          name: "port10.jpg",
+          to: "Baoshi",
+        },
+        {
+          id: 31,
+          head: "Vinil Gdo Online",
+          size: "width 2.5m. x height 1m.",
+          create: "October 2014",
+          images: [
+            {
+              name: "detail22.jpg",
+            },
+          ],
+          detail:
+            "Adventure game by designing, placing the characters to stand out. then use bright colors which is the theme of this game make it look playful and is of interest to people of all ages.",
+          name: "port11.jpg",
+          to: "Vinil-Gdo-Online",
+        },
+        {
+          id: 32,
+          head: "Poster Gdo Online",
+          size: "width 58cm. x height 86cm.",
+          create: "October 2014",
+          images: [
+            {
+              name: "detail23.jpg",
+            },
+          ],
+          detail:
+            "Adventure game by designing, placing the characters to stand out. then use bright colors which is the theme of this game make it look playful and is of interest to people of all ages.",
+          name: "port29.jpg",
+          to: "Poster-Gdo-Online",
+        },
+        {
           id: 6,
           head: "Banner Knight Frank Thailand | Real Estate Agents",
           size: "width 1920 px. x height 600 px.",
@@ -130,14 +202,18 @@ export default {
         },
         {
           id: 10,
-          head: "Banner London Property Exhibition",
+          head: "Luxury condo in the heart of the city",
           size: "width 1000 px. x height 500 px.",
           create: "January 2016",
-          images: [{ name: "detail12.jpg" }],
+          images: [
+            { name: "detail12.jpg" },
+            { name: "detail13.jpg" },
+            { name: "detail14.jpg" },
+          ],
           detail:
             "knight frank is also a broker to help sell real estate to clients. Which each house and condo Is also luxurious and beautiful as well Therefore designed to be colorful, comfortable to the eyes Suitable for rest And see the beautiful scenery",
           name: "port9.jpg",
-          to: "Banner-London-Property-Exhibition",
+          to: "Banner-Luxury",
         },
       ],
     };
@@ -156,12 +232,38 @@ export default {
 
 <style lang="scss" scoped>
 #page {
-  max-width: 76.8rem;
+  max-width: 96rem;
   width: 100%;
   margin: 0 auto;
+  .title {
+    @include flex_start_between();
+    gap: 1.6rem;
+    .size_create {
+      @include flex_start_end();
+      flex-direction: column;
+      flex-shrink: 0;
+      @include responsive_xs() {
+        @include flex_start_start();
+      }
+    }
+    @include responsive_xs() {
+      flex-direction: column;
+    }
+  }
   .grid_img {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(45rem, 1fr));
+    grid-gap: 3rem;
+    @include responsive_xs() {
+      grid-template-columns: 1fr;
+    }
+
+    img {
+      width: auto;
+    }
+  }
+  .flex_img {
     @include flex_center_center();
-    flex-wrap: wrap;
     gap: 3rem;
     img {
       width: auto;

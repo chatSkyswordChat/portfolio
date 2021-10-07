@@ -4,6 +4,12 @@
   justify-content: space-between;
 }
 
+@mixin flex_start_between() {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
 @mixin flex_center_center() {
   display: flex;
   align-items: center;
@@ -25,4 +31,16 @@
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
+}
+
+@mixin flex_start_start() {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+
+@mixin flex_end_between() {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
 }
