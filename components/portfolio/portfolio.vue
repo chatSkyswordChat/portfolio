@@ -191,7 +191,7 @@ export default {
 .v-tabs:not(.v-tabs--vertical):not(.v-tabs--right)
   > .v-slide-group--is-overflowing.v-tabs-bar--is-mobile:not(.v-slide-group--has-affixes)
   .v-slide-group__prev {
-  display: none;
+  display: none !important;
 }
 .v-tabs-slider-wrapper {
   height: 0.3rem !important;
