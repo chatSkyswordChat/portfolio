@@ -1,6 +1,6 @@
 <template>
   <div>
-    <portfolio />
+    <portfolio class="mt-8" />
   </div>
 </template>
 

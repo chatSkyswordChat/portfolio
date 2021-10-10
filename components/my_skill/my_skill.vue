@@ -1,5 +1,5 @@
 <template>
-  <section id="my_skill" class="pa-4">
+  <section id="my_skill" class="py-4">
     <h2 class="font_head mb-4">My Skill</h2>
     <v-row>
       <v-col cols="12" md="6">
@@ -77,10 +77,6 @@ export default {
       skills: [],
     };
   },
-  //   async asyncData() {
-  //     const articleSummaries = await data;
-  //     return { articleSummaries };
-  //   },
   async created() {
     this.items = await data.items;
     this.skills = await data.skills;

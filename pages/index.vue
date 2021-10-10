@@ -1,7 +1,6 @@
 <template>
   <div>
     <present />
-    <favorite />
     <workHistory />
     <mySkill />
     <portfolio />

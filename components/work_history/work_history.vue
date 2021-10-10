@@ -9,11 +9,12 @@
     </figure>
 
     <div class="work_history py-4">
-      <h2 class="font_head color_secondary mb-4">Work History</h2>
+      <h2 class="font_head color_secondary mb-4 tu">Work History</h2>
       <v-timeline>
         <v-timeline-item
           v-for="(workHistory, index) in workHistorys"
           :key="index.id"
+          class="timeline"
         >
           <template v-slot:opposite>
             <span class="color_secondary font_subHead date">{{
@@ -51,11 +52,12 @@ export default {
       workHistorys: [],
     };
   },
+  async beforeMount() {
+    this.workHistorys = await data.workHistorys;
+  },
   async mounted() {
     const AOS = await import("aos");
     AOS.init();
-
-    this.workHistorys = await data.workHistorys;
   },
 };
 </script>
@@ -64,13 +66,13 @@ export default {
 #work_history {
   position: relative;
   .bg_my img {
-    height: 125vh;
+    height: 100vh;
     object-fit: cover;
     @include responsive_md() {
-      height: 140vh;
+      height: 120vh;
     }
     @include responsive_xxxs() {
-      height: 160vh;
+      height: 140vh;
     }
   }
   .work_history {

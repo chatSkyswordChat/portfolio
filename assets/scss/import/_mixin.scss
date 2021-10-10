@@ -35,8 +35,8 @@
 
 @mixin flex_start_start() {
   display: flex;
-  align-items: start;
-  justify-content: start;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 @mixin flex_end_between() {

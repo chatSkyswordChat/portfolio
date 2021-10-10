@@ -1,10 +1,10 @@
 <template>
   <section id="portfolio" class="py-4">
     <v-tabs background-color="white" color="red darken-2" left>
-      <v-tab>Print Media</v-tab>
-      <v-tab>Banner</v-tab>
-      <v-tab>Logo</v-tab>
-      <v-tab>Web Design</v-tab>
+      <v-tab class="px-0 font_text width_tab">Print Media</v-tab>
+      <v-tab class="px-0 font_text width_tab">Banner</v-tab>
+      <v-tab class="px-0 font_text width_tab">Logo</v-tab>
+      <v-tab class="px-0 font_text width_tab">Web Design</v-tab>
 
       <v-tab-item v-for="tab in 1" :key="tab.id" class="mt-4">
         <section class="portfolio mb-4">
@@ -74,6 +74,25 @@
         </section>
       </v-tab-item>
 
+      <v-tab-item v-for="tab in 1" :key="tab.id" class="mt-4">
+        <section class="logo mb-4 px-4">
+          <div
+            v-for="logoDesign in logoDesigns"
+            :key="logoDesign.id"
+            class="frame elevation-5"
+          >
+            <figure>
+              <img
+                class="pa-4"
+                :src="require(`@/assets/images/portfolio/${logoDesign.name}`)"
+                :lazy-src="logoDesign.name"
+                alt
+              />
+            </figure>
+          </div>
+        </section>
+      </v-tab-item>
+
       <!-- <v-tab-item v-for="protfolioThree in 1" :key="protfolioThree.id">
         <tabThree />
       </v-tab-item>
@@ -92,17 +111,26 @@ export default {
     return {
       printDesigns: [],
       bannerDesigns: [],
+      logoDesigns: [],
     };
   },
   async mounted() {
     this.printDesigns = await data.printDesigns;
     this.bannerDesigns = await data.bannerDesigns;
+    this.logoDesigns = await data.logoDesigns;
   },
 };
 </script>
 
 <style lang="scss" scoped>
 #portfolio {
+  .width_tab {
+    min-width: 12rem;
+    &.v-tab--active {
+      background: $color_primary;
+      color: $color_secondary;
+    }
+  }
   .portfolio {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(28rem, 1fr));
@@ -110,6 +138,7 @@ export default {
     .frame {
       display: flex;
       overflow: hidden;
+      border-radius: 0.5rem 0.5rem 0 0;
     }
     a {
       display: flex;
@@ -138,5 +167,32 @@ export default {
       object-fit: cover;
     }
   }
+  .logo {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    grid-gap: 3rem;
+    .frame {
+      border-radius: 0.5rem 0.5rem 0 0;
+    }
+    figure {
+      display: flex;
+      img {
+        @extend .frame;
+      }
+    }
+  }
+}
+</style>
+
+<style lang="scss">
+.v-slide-group__prev {
+  flex: inherit;
+  min-width: inherit;
+}
+.v-tabs-slider-wrapper {
+  height: 0.3rem !important;
+}
+.v-tabs-slider {
+  background-color: #9c0202 !important;
 }
 </style>
