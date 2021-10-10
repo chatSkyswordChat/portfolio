@@ -71,10 +71,6 @@ ul {
   list-style: none;
 }
 
-picture {
-  display: flex;
-}
-
 .v-application p {
   margin-bottom: 0 !important;
 }
@@ -100,7 +96,7 @@ picture {
   border: 0;
   border-bottom: 0.1rem dashed $color_line !important;
 }
-.line_frame{
-  border: .1rem solid $color_line;
+.line_frame {
+  border: 0.1rem solid $color_line;
 }
 //  end เส้น

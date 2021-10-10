@@ -9,7 +9,7 @@
     </figure>
 
     <div class="work_history py-4">
-      <h2 class="font_head color_secondary mb-4 tu">Work History</h2>
+      <h2 class="font_head color_secondary mb-4">Work History</h2>
       <v-timeline>
         <v-timeline-item
           v-for="(workHistory, index) in workHistorys"
@@ -65,21 +65,21 @@ export default {
 <style lang="scss" scoped>
 #work_history {
   position: relative;
-  .bg_my img {
-    height: 100vh;
-    object-fit: cover;
-    @include responsive_md() {
-      height: 120vh;
-    }
-    @include responsive_xxxs() {
-      height: 140vh;
+  .bg_my {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    img {
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
     }
   }
+
   .work_history {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+    h2 {
+      position: relative;
+    }
     .date {
       text-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.5);
     }
