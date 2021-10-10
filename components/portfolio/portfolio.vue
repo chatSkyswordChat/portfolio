@@ -185,9 +185,13 @@ export default {
 </style>
 
 <style lang="scss">
-.v-slide-group__prev {
-  flex: inherit;
-  min-width: inherit;
+.v-tabs:not(.v-tabs--vertical).v-tabs--right
+  > .v-slide-group--is-overflowing.v-tabs-bar--is-mobile:not(.v-slide-group--has-affixes)
+  .v-slide-group__next,
+.v-tabs:not(.v-tabs--vertical):not(.v-tabs--right)
+  > .v-slide-group--is-overflowing.v-tabs-bar--is-mobile:not(.v-slide-group--has-affixes)
+  .v-slide-group__prev {
+  display: none;
 }
 .v-tabs-slider-wrapper {
   height: 0.3rem !important;
