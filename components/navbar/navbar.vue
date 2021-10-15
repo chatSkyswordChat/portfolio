@@ -130,7 +130,7 @@ export default {
     background-color: inherit !important;
   }
   .mobile_menu {
-    font-size: $font_text;
+    font-size: $font_text !important;
     line-height: inherit;
   }
   &.active,
@@ -140,12 +140,4 @@ export default {
   }
 }
 // end ปุ่มเมนู mobile vuetify
-</style>
-
-<style lang="scss">
-.navbar {
-  .btn_menu {
-    font-size: $font_text !important;
-  }
-}
 </style>
