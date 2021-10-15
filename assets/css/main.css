@@ -199,4 +199,14 @@ ul {
   border: 0.1rem solid #555555;
 }
 
+.line_white {
+  border: 0;
+  border-bottom: 0.1rem solid #ffffff !important;
+}
+
+.dashed_white {
+  border: 0;
+  border-bottom: 0.1rem dashed #ffffff !important;
+}
+
 /*# sourceMappingURL=main.css.map */

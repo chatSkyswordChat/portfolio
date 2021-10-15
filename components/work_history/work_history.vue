@@ -1,5 +1,5 @@
 <template>
-  <section id="work_history">
+  <section id="work_history" :class="show">
     <figure class="bg_my">
       <picture>
         <source srcset="@/assets/images/home/bg3.webp" type="image/webp" />
@@ -59,6 +59,22 @@ export default {
     const AOS = await import("aos");
     AOS.init();
   },
+  props: {
+    display_show: {
+      type: Boolean,
+      default: false,
+    },
+  },
+  computed: {
+    show() {
+      let varDisplayShow;
+      if (this.display_show) {
+        varDisplayShow = true;
+      }
+
+      return { display_show: varDisplayShow };
+    },
+  },
 };
 </script>
 
@@ -86,7 +102,13 @@ export default {
     .detail {
       line-height: 1.5;
     }
+    .timeline:nth-child(n + 4) {
+      display: none;
+    }
   }
+}
+.display_show .timeline:nth-child(n + 4) {
+  display: flex !important;
 }
 </style>
 

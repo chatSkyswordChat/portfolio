@@ -93,13 +93,39 @@
         </section>
       </v-tab-item>
 
-      <!-- <v-tab-item v-for="protfolioThree in 1" :key="protfolioThree.id">
-        <tabThree />
+      <v-tab-item v-for="tab in 1" :key="tab.id" class="mt-4">
+        <section class="portfolio mb-4 px-4">
+          <div
+            v-for="webDesign in webDesigns"
+            :key="webDesign.id"
+            class="frame elevation-5"
+            @click="locationHref(webDesign)"
+          >
+            <nuxt-link
+              :to="{
+                name: 'portfolio-portfolio',
+                params: { portfolio: webDesign.to },
+              }"
+              target="_blank"
+            >
+              <figure>
+                <img
+                  class="pa-4"
+                  :src="require(`@/assets/images/portfolio/${webDesign.name}`)"
+                  :lazy-src="webDesign.name"
+                  alt
+                />
+              </figure>
+              <div class="detail bg_disabled pa-4">
+                <p class="mb-4 color_text">{{ webDesign.detail }}</p>
+                <v-btn class="font_small bg_primary color_secondary read"
+                  >read more</v-btn
+                >
+              </div>
+            </nuxt-link>
+          </div>
+        </section>
       </v-tab-item>
-
-      <v-tab-item v-for="protfolioFour in 1" :key="protfolioFour.id">
-        <tabFour />
-      </v-tab-item> -->
     </v-tabs>
   </section>
 </template>
@@ -112,12 +138,26 @@ export default {
       printDesigns: [],
       bannerDesigns: [],
       logoDesigns: [],
+      webDesigns: [],
     };
   },
   async mounted() {
     this.printDesigns = await data.printDesigns;
     this.bannerDesigns = await data.bannerDesigns;
     this.logoDesigns = await data.logoDesigns;
+    this.webDesigns = await data.webDesigns;
+  },
+  methods: {
+    locationHref(webDesign) {
+      let jobbkk = "https://chatskyswordchat.github.io/chatJobbkk/";
+      let orchidjobs =
+        "https://chatskyswordchat.github.io/orchidJobs/index.html";
+      if (webDesign.to === jobbkk || webDesign.to === orchidjobs) {
+        window.open(webDesign.to, "_blank");
+      } else {
+        webDesign.to;
+      }
+    },
   },
 };
 </script>

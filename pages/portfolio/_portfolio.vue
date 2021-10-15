@@ -13,8 +13,11 @@
           </h6>
         </div>
       </div>
-      <!-- รูป เท่ากับ 1 -->
-      <div class="flex_img mb-4" v-if="portfolio.images.length === 1">
+      <!-- รูป เท่ากับ 1 มากกว่า 2 -->
+      <div
+        class="flex_img mb-4"
+        v-if="portfolio.images.length === 1 || portfolio.images.length >= 3"
+      >
         <figure v-for="image in portfolio.images" :key="image.id">
           <img
             :src="require(`@/assets/images/portfolioDetail/${image.name}`)"
@@ -23,9 +26,9 @@
           />
         </figure>
       </div>
-      <!-- end รูป เท่ากับ 1 -->
+      <!-- end รูป เท่ากับ 1 มากกว่า 2 -->
 
-      <!-- รูป มากกว่า 1 -->
+      <!-- รูป เท่ากับ 2 -->
       <div class="grid_img mb-4" v-else>
         <figure v-for="image in portfolio.images" :key="image.id">
           <img
@@ -35,7 +38,7 @@
           />
         </figure>
       </div>
-      <!-- end รูป มากกว่า 1 -->
+      <!-- end รูป เท่ากับ 2 -->
       <h6 class="mb-4">
         <span class="font-weight-bold">Detail :</span> {{ portfolio.detail }}
       </h6>
@@ -182,7 +185,8 @@ export default {
             { name: "detail13.jpg" },
             { name: "detail14.jpg" },
           ],
-          detail: `knight frank is also a broker to help sell real estate to clients. Which each house and condo Is also luxurious and beautiful as well Therefore designed to be colorful, 
+          detail: `knight frank is also a broker to help sell real estate to clients.
+           Which each house and condo Is also luxurious and beautiful as well Therefore designed to be colorful, 
             comfortable to the eyes Suitable for rest And see the beautiful scenery`,
           to: "Banner-Luxury",
         },
@@ -191,7 +195,9 @@ export default {
           size: "width 960 px. x height 3100 px.",
           create: "October 2018",
           images: [{ name: "detail15.jpg" }],
-          detail: `The design concept is Give to the people we love By using colors that are comfortable on the eyes, off the pastel line with a simple arrangement. Make it look more premium and attractive.`,
+          detail: `The design concept is Give to the people we love By 
+          using colors that are comfortable on the eyes, off the pastel line with a simple arrangement. 
+          Make it look more premium and attractive.`,
           to: "Direct-Mail-Gift-Premium",
         },
         {
@@ -199,9 +205,23 @@ export default {
           size: "width 960 px. x height 3100 px.",
           create: "December 2018",
           images: [{ name: "detail16.jpg" }],
-          detail:
-            "The most valuable promotion of Icon Ideas with a design that looks comfortable on the eyes. Use pastel tones to look cute and interesting to give to your loved ones.",
+          detail: `The most valuable promotion of Icon Ideas with a design that 
+          looks comfortable on the eyes. Use pastel tones to look cute and interesting to give to your loved ones.`,
           to: "Direct-Mail-Great-Promotion",
+        },
+        {
+          head: "Design Jobbkk Application",
+          size: "na",
+          create: "January 2020",
+          images: [
+            { name: "detail17.jpg" },
+            { name: "detail18.jpg" },
+            { name: "detail24.jpg" },
+            { name: "detail25.jpg" },
+          ],
+          detail: `Design a jobbkk aplication with adobe xd. The color 
+          scheme used is red, white and gray with wireframe, prototype, varidate.`,
+          to: "Design-Jobbkk-Application",
         },
       ],
     };
@@ -252,6 +272,7 @@ export default {
   }
   .flex_img {
     @include flex_center_center();
+    flex-direction: column;
     gap: 3rem;
     img {
       width: auto;

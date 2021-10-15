@@ -99,4 +99,12 @@ ul {
 .line_frame {
   border: 0.1rem solid $color_line;
 }
+.line_white {
+  border: 0;
+  border-bottom: 0.1rem solid $color_secondary !important;
+}
+.dashed_white {
+  border: 0;
+  border-bottom: 0.1rem dashed $color_secondary !important;
+}
 //  end เส้น

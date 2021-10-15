@@ -33,6 +33,63 @@
       "skill": 20
     }
   ],
+  "curricurlumVitaes": [
+    {
+      "name": "Adobe Illustrator",
+      "skill": 90,
+      "icon": "CurriculumVitae-08.svg"
+    },
+    {
+      "name": "Adobe Photoshop",
+      "skill": 90,
+      "icon": "CurriculumVitae-09.svg"
+    },
+    {
+      "name": "Adobe Xd",
+      "skill": 90,
+      "icon": "CurriculumVitae-10.svg"
+    },
+    {
+      "name": "Figma",
+      "skill": 70,
+      "icon": "CurriculumVitae-20.svg"
+    },
+    {
+      "name": "Adobe Lightroom",
+      "skill": 90,
+      "icon": "CurriculumVitae-11.svg"
+    },
+    {
+      "name": "HTML",
+      "skill": 90,
+      "icon": "CurriculumVitae-12.svg"
+    },
+    {
+      "name": "CSS",
+      "skill": 90,
+      "icon": "CurriculumVitae-13.svg"
+    },
+    {
+      "name": "SCSS + SASS",
+      "skill": 90,
+      "icon": "CurriculumVitae-19.svg"
+    },
+    {
+      "name": "Java Script",
+      "skill": 20,
+      "icon": "CurriculumVitae-14.svg"
+    },
+    {
+      "name": "Vue",
+      "skill": 20,
+      "icon": "CurriculumVitae-15.svg"
+    },
+    {
+      "name": "Nuxt",
+      "skill": 20,
+      "icon": "CurriculumVitae-16.svg"
+    }
+  ],
   "skills": [
     {
       "name": "Photographer",
@@ -65,49 +122,61 @@
   ],
   "workHistorys": [
     {
+      "id": 1,
       "date": "June 2017 to Present",
       "company": "บริษัท จัดหางาน จ๊อบบีเคเค ดอท คอม จำกัด",
       "position": "Web Designer",
-      "detail": "Design website, write Html Css code and make screen to be Responsive, design banner for customers to use the service",
+      "salary": "30,000 baht",
+      "detail": "Design website, write HTML CSS code and make screen to be Responsive, design banner for customers to use the service",
       "fade": "fade-left",
       "number": 1000
     },
     {
+      "id": 2,
       "date": "February 2016 to May 2017",
       "company": "บริษัท อีซี่วัน ไทย",
       "position": "Web Designer",
-      "detail": "Website Design Write Html Css Code and Make Responsive Screens, Banner and Logo Design",
+      "salary": "23,000 baht",
+      "detail": "Website Design Write HTML CSS Code and Make Responsive Screens, Banner and Logo Design",
       "fade": "fade-right",
       "number": 1200
     },
     {
+      "id": 3,
       "date": "September 2015 to February 2016",
       "company": "Knight Frank Thailand | Real Estate Agents",
       "position": "Graphic Designer",
+      "salary": "23,000 baht",
       "detail": "Design banners, brochures, vinyl banners. Check the work already. To enter the printing process",
       "fade": "fade-left",
       "number": 1400
     },
     {
+      "id": 4,
       "date": "September 2012 to September 2015",
       "company": "บริษัท วินเนอร์ ออนไลน์ จำกัด",
       "position": "Web Designer",
+      "salary": "18,000 baht",
       "detail": "Banner design, media design Design package design, logo, website design and write HTML CSS and display the screen responsive",
       "fade": "fade-right",
       "number": 1600
     },
     {
+      "id": 5,
       "date": "September 2009 to September 2012",
       "company": "Thailand Business Pages",
       "position": "Graphic Designer",
+      "salary": "11,000 baht",
       "detail": "Design various advertising media for customers who come to buy advertising pages to book the company. And bring all advertisements into the picture And distributed to customers And participants in Thailand Industrial Fair and Food Pack",
       "fade": "fade-left",
       "number": "1800"
     },
     {
+      "id": 6,
       "date": "March 2009 to July 2009",
       "company": "บริษัท ก.การพิมพ์แอนด์สติกเกอทันใจ",
       "position": "Graphic Designer",
+      "salary": "8,000 baht",
       "detail": "Design print media such as logos, packaging, product labels, stickers, and then inspect To enter the printing process",
       "fade": "fade-right",
       "number": "2000"
@@ -222,6 +291,23 @@
     },
     {
       "name": "port24.jpg"
+    }
+  ],
+  "webDesigns": [
+    {
+      "detail": "Design a JOBBKK website and then write HTML CSS.",
+      "name": "port25.jpg",
+      "to": "https://chatskyswordchat.github.io/chatJobbkk/"
+    },
+    {
+      "detail": "Design a ORCHIDJOBS website and then write HTML CSS.",
+      "name": "port26.jpg",
+      "to": "https://chatskyswordchat.github.io/orchidJobs/index.html"
+    },
+    {
+      "detail": "Design a jobbkk aplication with adobe xd. The color scheme used is red, white and gray with wireframe, prototype, varidate.",
+      "name": "port27.jpg",
+      "to": "Design-Jobbkk-Application"
     }
   ]
 }
