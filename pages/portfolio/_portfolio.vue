@@ -234,6 +234,11 @@ export default {
   mounted() {
     const menuPortfolio = document.querySelectorAll(".btn_menu")[2];
     menuPortfolio.classList.add("active");
+
+    const menuMobiles = document
+      .querySelector(".v-item-group")
+      .querySelectorAll(".btn_menu")[2];
+    menuMobiles.classList.add("active");
   },
 };
 </script>
