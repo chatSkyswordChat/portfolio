@@ -20,7 +20,8 @@ $bg_colors: (
   "bg_disabled" #ebebeb,
   "bg_text" #333333,
   "bg_background" #bfbfbf,
-  "bg_link" #3f51b5
+  "bg_link" #3f51b5,
+  "bg_line" #555555
 );
 
 $colors: (
@@ -33,7 +34,8 @@ $colors: (
   "color_disabled" #ebebeb,
   "color_text" #333333,
   "color_background" #bfbfbf,
-  "color_link" #3f51b5
+  "color_link" #3f51b5,
+  "color_line" #555555
 );
 
 @each $name, $bg_color in $bg_colors {

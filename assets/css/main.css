@@ -38,6 +38,10 @@
   background: #3f51b5 !important;
 }
 
+.bg_line {
+  background: #555555 !important;
+}
+
 .color_primary {
   color: #d40101 !important;
 }
@@ -76,6 +80,10 @@
 
 .color_link {
   color: #3f51b5 !important;
+}
+
+.color_line {
+  color: #555555 !important;
 }
 
 .font_head {

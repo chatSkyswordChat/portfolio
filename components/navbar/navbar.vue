@@ -20,7 +20,8 @@
         v-for="(menu, index) in menus"
         :key="index.id"
         text
-        exact-active-class="active"
+        active-class="active"
+        exact
         :to="menu.route"
         class="btn_menu hidden-sm-and-down"
       >
@@ -36,7 +37,8 @@
             :key="index.id"
             :to="menu.route"
             class="btn_menu"
-            exact-active-class="active"
+            active-class="active"
+            exact
           >
             <v-list-item-icon class="icon mr-2">
               <font-awesome-icon

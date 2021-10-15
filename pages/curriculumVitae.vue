@@ -6,17 +6,27 @@
           <v-col cols="12" class="bg_secondary">
             <section class="grid_vitae py-4">
               <div class="left_vitae">
-                <!-- รูป โปรไฟล์ -->
-                <div class="text-center bg_info pa-4 rounded-lg mb-4">
-                  <figure class="cv_pic mb-4">
-                    <img
-                      src="@/assets/images/curriculumVitae/vitae.jpg"
-                      alt=""
-                    />
-                  </figure>
-                  <h1 class="color_secondary">Chatthong Hongwisuthikul</h1>
+                <div class="mb-8">
+                  <div class="mb-4">
+                    <h2
+                      class="font-weight-bold color_line font_head mb-2"
+                      style="line-height: 1"
+                    >
+                      Chatthong Hongwisuthikul
+                    </h2>
+                    <h3 class="color_primary">Web Designer</h3>
+                  </div>
+                  <!-- รูป โปรไฟล์ -->
+                  <div class="text-center">
+                    <figure class="cv_pic mb-4">
+                      <img
+                        src="@/assets/images/curriculumVitae/vitae.jpg"
+                        alt=""
+                      />
+                    </figure>
+                  </div>
+                  <!-- end รูป โปรไฟล์ -->
                 </div>
-                <!-- end รูป โปรไฟล์ -->
 
                 <article>
                   <!-- วัน เดือน ปี เกิด -->
@@ -64,7 +74,6 @@
                     </figure>
                     <div>
                       <p>
-                        <span class="font-weight-bold">Address : </span>
                         447 Lat Phrao 109 Road, Khlong Chan Subdistrict, Bang
                         Kapi District, Bangkok 10240
                       </p>
@@ -266,7 +275,9 @@
                     <div>
                       <p>
                         <b>Company :</b>
-                        <span>{{ workHistory.company }}</span>
+                        <span class="color_primary">{{
+                          workHistory.company
+                        }}</span>
                       </p>
                       <p><b>Duration :</b> {{ workHistory.date }}</p>
                       <p><b>Position :</b> {{ workHistory.position }}</p>
@@ -305,18 +316,14 @@ export default {
 #curriculum_vitae {
   .grid_vitae {
     display: grid;
-    grid-template-columns: 45rem 1fr;
+    grid-template-columns: 40rem 1fr;
     grid-gap: 3rem;
     @include responsive_md() {
       grid-template-columns: 1fr;
     }
-    .left_vitae .cv_pic img {
-      max-width: 20rem;
-      height: 20rem;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 0.5rem solid $color_secondary;
-      box-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.5);
+    .left_vitae .cv_red {
+      background: $color_primary;
+      height: 4rem;
     }
     .left_vitae .flex_cv,
     .right_vitae .flex_cv {
