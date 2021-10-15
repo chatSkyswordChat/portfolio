@@ -1,6 +1,6 @@
 <template>
   <!-- แนะนำตัว -->
-  <section id="present" class="mb-4">
+  <section id="present">
     <figure class="bg_my">
       <picture>
         <source srcset="@/assets/images/home/bg1.webp" type="image/webp" />

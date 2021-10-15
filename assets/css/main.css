@@ -79,15 +79,15 @@
 }
 
 .font_head {
-  font-size: clamp(2.4rem, 2.5vw, 2.8rem);
+  font-size: clamp(2.8rem, 2.5vw, 3.2rem);
 }
 
 .font_subHead {
-  font-size: clamp(1.8rem, 2.5vw, 2rem);
+  font-size: clamp(2rem, 2.5vw, 2.4rem);
 }
 
 .font_superText {
-  font-size: clamp(1.4rem, 2.5vw, 1.6rem);
+  font-size: clamp(1.4rem, 2.5vw, 1.8rem);
 }
 
 .font_text {
@@ -141,15 +141,15 @@ h6 {
 }
 
 h1 {
-  font-size: clamp(2.4rem, 2.5vw, 2.8rem);
+  font-size: clamp(2.8rem, 2.5vw, 3.2rem);
 }
 
 h2 {
-  font-size: clamp(1.8rem, 2.5vw, 2rem);
+  font-size: clamp(2rem, 2.5vw, 2.4rem);
 }
 
 h3 {
-  font-size: clamp(1.4rem, 2.5vw, 1.6rem);
+  font-size: clamp(1.4rem, 2.5vw, 1.8rem);
 }
 
 h6,
@@ -163,6 +163,10 @@ small {
 
 figure {
   margin: 0;
+}
+
+picture {
+  display: flex;
 }
 
 ul {
