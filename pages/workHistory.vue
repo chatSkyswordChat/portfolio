@@ -1,6 +1,6 @@
 <template>
   <div>
-    <workHistory display_show />
+    <workHistory />
   </div>
 </template>
 

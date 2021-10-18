@@ -55,32 +55,20 @@ export default {
   async beforeMount() {
     this.workHistorys = await data.workHistorys;
 
-    if (this.$route.path === "/") {
-      this.workHistorys = this.workHistorys.slice(0, 3);
-    } else {
-      this.workHistorys;
-    }
+    const workHistory = () => {
+      if (this.$route.path === "/") {
+        this.workHistorys = this.workHistorys.slice(0, 3);
+      } else {
+        this.workHistorys;
+      }
+    };
+
+    workHistory();
   },
   async mounted() {
     const AOS = await import("aos");
     AOS.init();
   },
-  // props: {
-  //   display_show: {
-  //     type: Boolean,
-  //     default: false,
-  //   },
-  // },
-  // computed: {
-  //   show() {
-  //     let varDisplayShow;
-  //     if (this.display_show) {
-  //       varDisplayShow = true;
-  //     }
-
-  //     return { display_show: varDisplayShow };
-  //   },
-  // },
 };
 </script>
 
@@ -108,14 +96,8 @@ export default {
     .detail {
       line-height: 1.5;
     }
-    // .timeline:nth-child(n + 4) {
-    //   display: none;
-    // }
   }
 }
-// .display_show .timeline:nth-child(n + 4) {
-//   display: flex !important;
-// }
 </style>
 
 <style lang="scss">
