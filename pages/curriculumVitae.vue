@@ -43,6 +43,10 @@
                         January 1987
                       </p>
                       <p>
+                        <span class="font-weight-bold">Age :</span>
+                        {{ ages }} years old
+                      </p>
+                      <p>
                         <span class="font-weight-bold">Height :</span> 165 cm.
                       </p>
                       <p>
@@ -65,7 +69,7 @@
                   <hr class="dashed my-4" />
 
                   <!-- ที่อยู่ -->
-                  <div class="flex_cv mb-4">
+                  <div class="flex_cv center_cv mb-4">
                     <figure class="cv_icon bg_warning">
                       <img
                         src="@/assets/images/curriculumVitae/CurriculumVitae-02.svg"
@@ -303,11 +307,17 @@ export default {
     return {
       curricurlumVitaes: [],
       workHistorys: [],
+      ages: "",
     };
   },
   async beforeMount() {
     this.curricurlumVitaes = await data.curricurlumVitaes;
     this.workHistorys = await data.workHistorys;
+  },
+  mounted() {
+    let startYear = new Date("1987-01-30");
+    let currentYear = new Date();
+    this.ages = currentYear.getFullYear() - startYear.getFullYear();
   },
 };
 </script>
