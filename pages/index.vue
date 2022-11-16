@@ -4,7 +4,6 @@
     <workHistory />
     <mySkill />
     <portfolio />
-    <btn btn_red box_shadow color_white />
   </div>
 </template>
 
