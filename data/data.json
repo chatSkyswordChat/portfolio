@@ -14,7 +14,7 @@
     },
     {
       "name": "Figma",
-      "skill": 70
+      "skill": 90
     },
     {
       "name": "Adobe Lightroom",
@@ -51,7 +51,7 @@
     },
     {
       "name": "Figma",
-      "skill": 70,
+      "skill": 90,
       "icon": "CurriculumVitae-20.svg"
     },
     {
@@ -126,7 +126,7 @@
       "date": "June 2017 to Present",
       "company": "บริษัท จัดหางาน จ๊อบบีเคเค ดอท คอม จำกัด",
       "position": "Web Designer",
-      "salary": "30,000 baht",
+      "salary": "33,000 baht",
       "detail": "Design website, write HTML CSS code and make screen to be Responsive, design banner for customers to use the service",
       "fade": "fade-left",
       "number": 1000

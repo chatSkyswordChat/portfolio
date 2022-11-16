@@ -2,7 +2,9 @@
   <div>
     <section id="page" class="mt-8">
       <div class="title mb-4">
-        <h1 class="font-weight-bold">{{ portfolio.head }}</h1>
+        <h1 class="font-weight-bold" style="line-height: 2.8rem">
+          {{ portfolio.head }}
+        </h1>
         <div class="size_create">
           <h6>
             <span class="font-weight-bold">size :</span> {{ portfolio.size }}
@@ -13,7 +15,7 @@
           </h6>
         </div>
       </div>
-      <!-- รูป เท่ากับ 1 มากกว่า 2 -->
+
       <div
         class="flex_img mb-4"
         v-if="portfolio.images.length === 1 || portfolio.images.length >= 3"
@@ -26,9 +28,7 @@
           />
         </figure>
       </div>
-      <!-- end รูป เท่ากับ 1 มากกว่า 2 -->
 
-      <!-- รูป เท่ากับ 2 -->
       <div class="grid_img mb-4" v-else>
         <figure v-for="image in portfolio.images" :key="image.id">
           <img
@@ -38,7 +38,7 @@
           />
         </figure>
       </div>
-      <!-- end รูป เท่ากับ 2 -->
+
       <h6 class="mb-4">
         <span class="font-weight-bold">Detail :</span> {{ portfolio.detail }}
       </h6>

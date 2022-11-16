@@ -4,6 +4,7 @@
     <workHistory />
     <mySkill />
     <portfolio />
+    <btn btn_red box_shadow color_white />
   </div>
 </template>
 
@@ -16,5 +17,4 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-</style>
+<style lang="scss" scoped></style>
