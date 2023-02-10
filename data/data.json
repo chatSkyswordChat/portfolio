@@ -308,6 +308,16 @@
       "detail": "Design a jobbkk aplication with adobe xd. The color scheme used is red, white and gray with wireframe, prototype, varidate.",
       "name": "port27.jpg",
       "to": "Design-Jobbkk-Application"
+    },
+    {
+      "detail": "Design the JOBBKK website with Figma, with a Design System designed to be used in the same way. and linking the prototypes to different pages",
+      "name": "port30.jpg",
+      "to": "https://www.figma.com/file/3HK5DZszMFrdpZG9tb2Wsq/JOBBKK-UI-Design?t=F7LDClU8sEph1GhM-1"
+    },
+    {
+      "detail": "Design UX JOBBKK whether User Journey Map, User Flow, Information Architecture",
+      "name": "port31.jpg",
+      "to": "https://www.figma.com/file/KnhEVhrXN7WPQfwwPBk9ZY/UX-Design?node-id=0%3A1&t=F7LDClU8sEph1GhM-1"
     }
   ]
 }

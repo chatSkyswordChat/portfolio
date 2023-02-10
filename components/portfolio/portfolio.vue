@@ -16,7 +16,7 @@
             <nuxt-link
               :to="{
                 name: 'portfolio-portfolio',
-                params: { portfolio: printDesign.to },
+                params: { portfolio: printDesign.to }
               }"
               target="_blank"
             >
@@ -50,7 +50,7 @@
             <nuxt-link
               :to="{
                 name: 'portfolio-portfolio',
-                params: { portfolio: bannerDesign.to },
+                params: { portfolio: bannerDesign.to }
               }"
               target="_blank"
             >
@@ -104,7 +104,7 @@
             <nuxt-link
               :to="{
                 name: 'portfolio-portfolio',
-                params: { portfolio: webDesign.to },
+                params: { portfolio: webDesign.to }
               }"
               target="_blank"
             >
@@ -138,7 +138,7 @@ export default {
       printDesigns: [],
       bannerDesigns: [],
       logoDesigns: [],
-      webDesigns: [],
+      webDesigns: []
     };
   },
   async mounted() {
@@ -149,16 +149,24 @@ export default {
   },
   methods: {
     locationHref(webDesign) {
-      let jobbkk = "https://chatskyswordchat.github.io/chatJobbkk/";
-      let orchidjobs =
-        "https://chatskyswordchat.github.io/orchidJobs/index.html";
-      if (webDesign.to === jobbkk || webDesign.to === orchidjobs) {
+      let jobbkk = "https://chatskyswordchat.github.io/chatJobbkk/",
+        orchidjobs = "https://chatskyswordchat.github.io/orchidJobs/index.html",
+        uiJobbkk =
+          "https://www.figma.com/file/3HK5DZszMFrdpZG9tb2Wsq/JOBBKK-UI-Design?t=F7LDClU8sEph1GhM-1",
+        uxJobbkk =
+          "https://www.figma.com/file/KnhEVhrXN7WPQfwwPBk9ZY/UX-Design?node-id=0%3A1&t=F7LDClU8sEph1GhM-1";
+      if (
+        webDesign.to === jobbkk ||
+        webDesign.to === orchidjobs ||
+        webDesign.to === uiJobbkk ||
+        webDesign.to === uxJobbkk
+      ) {
         window.open(webDesign.to, "_blank");
       } else {
         webDesign.to;
       }
-    },
-  },
+    }
+  }
 };
 </script>
 
